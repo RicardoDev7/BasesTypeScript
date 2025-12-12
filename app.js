@@ -1,2 +1,5 @@
-var message = "Hello World";
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+const message = "Hello World";
 console.log(message);
+//# sourceMappingURL=app.js.map
