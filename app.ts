@@ -1,10 +1,10 @@
-const message: string = "Hello World!!!";
-console.log(message);
-
-const hero = {
-    name: "Superman",
-    age: 300
-}
-
-console.log(hero);
-console.log(hero.age);
+/**
+ * Función anonima autoejecutable
+ */
+(() => {
+    const a: number = 10;
+    function sayHello(message: string){
+        console.log(`${message} - ${a}`);
+    }
+    sayHello('Hello TypeScript');
+})();

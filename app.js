@@ -1,10 +1,12 @@
 "use strict";
-const message = "Hello World!!!";
-console.log(message);
-const hero = {
-    name: "Superman",
-    age: 300
-};
-console.log(hero);
-console.log(hero.age);
+/**
+ * Función anonima autoejecutable
+ */
+(() => {
+    const a = 10;
+    function sayHello(message) {
+        console.log(`${message} - ${a}`);
+    }
+    sayHello('Hello TypeScript');
+})();
 //# sourceMappingURL=app.js.map
