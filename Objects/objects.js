@@ -8,7 +8,7 @@
     console.log(flash);
     flash = {
         name: 'Clark Kent',
-        age: 60,
+        //age: 60,
         powers: ['Super fuerza']
     };
     console.log(flash);
