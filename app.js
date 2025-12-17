@@ -1,7 +1,4 @@
 "use strict";
-/**
- * Función anonima autoejecutable
- */
 (() => {
     const a = 10;
     function sayHello(message) {

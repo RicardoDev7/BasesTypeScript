@@ -1,5 +1,4 @@
 "use strict";
-// Objetos
 const batimovil = {
     carroceria: "Negra",
     modelo: "6x6",
@@ -17,7 +16,6 @@ const bumblebee = {
     }
 };
 console.log(bumblebee);
-// Villanos debe de ser un arreglo de objetos personalizados
 const villanos = [{
         nombre: "Lex Luthor",
         edad: 54,
@@ -32,8 +30,6 @@ const villanos = [{
         mutante: true
     }];
 console.log(villanos);
-// Multiples tipos
-// cree dos tipos, uno para charles y otro para apocalipsis
 const charles = {
     poder: "psiquico",
     estatura: 1.78
@@ -44,7 +40,6 @@ const apocalipsis = {
     miembros: ["Magneto", "Tormenta", "Psylocke", "Angel"]
 };
 console.log(apocalipsis);
-// Mystique, debe poder ser cualquiera de esos dos mutantes (charles o apocalipsis)
 let mystique;
 mystique = charles;
 console.log(mystique);
