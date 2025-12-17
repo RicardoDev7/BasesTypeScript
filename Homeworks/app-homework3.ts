@@ -1,4 +1,5 @@
-
+(() => {
+  
 type Car = {
     carroceria: string,
     modelo: string,
@@ -85,3 +86,4 @@ mystique = charles;
 console.log(mystique);
 mystique = apocalipsis;
 console.log(mystique);
+})();

@@ -3,11 +3,11 @@
   "compilerOptions": {
     // File Layout
     // "rootDir": "./src",
-    // "outDir": "./dist",
+    "outDir": "./dist",
 
     // Environment Settings
     // See also https://aka.ms/tsconfig/module
-    "module": "commonjs",
+    "module": "amd",
     "target": "es2020",
     "types": [],
     // For nodejs:
@@ -17,6 +17,7 @@
 
     // Other Outputs
     "sourceMap": true,
+    "outFile": "./main.js",
     "declaration": true,
     "declarationMap": true,
     "removeComments": true,
@@ -36,8 +37,8 @@
     // Recommended Options
     "strict": true,
     "jsx": "react-jsx",
-    "verbatimModuleSyntax": true,
-    "isolatedModules": true,
+    //"verbatimModuleSyntax": true,
+    //"isolatedModules": true,
     "noUncheckedSideEffectImports": true,
     //"moduleDetection": "force",
     "skipLibCheck": true,
