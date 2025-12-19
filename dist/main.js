@@ -13,6 +13,11 @@
         console.log(ironman, rest);
     };
     printAvenger(avengers);
+    const avengersArr = ['Cap. America', 'Ironman', 'Hulk'];
+    const [cap, ironman,] = avengersArr;
+    console.log(avengersArr);
+    console.log(ironman);
+    console.log(cap);
 })();
 (() => {
     let a = 'let';
