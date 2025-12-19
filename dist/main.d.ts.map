@@ -1,1 +1,1 @@
-{"version":3,"file":"main.d.ts","sourceRoot":"","sources":["../src/es6/desestructuring.ts","../src/es6/let-var.ts"],"names":[],"mappings":""}
+{"version":3,"file":"main.d.ts","sourceRoot":"","sources":["../src/es6/desestructuring.ts","../src/es6/for-of.ts","../src/es6/let-var.ts"],"names":[],"mappings":""}
