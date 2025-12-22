@@ -1,49 +1,18 @@
 "use strict";
 (() => {
-    const avengers = {
-        nick: 'Samuel L. Jackson',
-        ironman: 'Robert Downey Jr.',
-        vision: 'Paul Bettany',
-        active: true,
-        power: 1500
-    };
-    const { power, vision } = avengers;
-    console.log(power.toFixed(2), vision.toUpperCase());
-    const printAvenger = ({ ironman, ...rest }) => {
-        console.log(ironman, rest);
-    };
-    printAvenger(avengers);
-    const avengersArr = ['Cap. America', 'Ironman', 'Hulk'];
-    const [cap, ironman,] = avengersArr;
-    console.log(avengersArr);
-    console.log(ironman);
-    console.log(cap);
-})();
-(() => {
-    const ironman = {
-        name: "Tony Stark",
-        weapon: "Armor Suit"
-    };
-    const captainAmerica = {
-        name: "Steve Rogers",
-        weapon: "Shield"
-    };
-    const thor = {
-        name: "Thor Odinson",
-        weapon: "Martillo"
-    };
-    const avengers = [ironman, thor, captainAmerica];
-    for (const ave of avengers) {
-        console.log(ave);
+    class Avenger {
+        name = '';
+        team = '';
+        realName;
+        static averageAge = 35;
+        constructor(name, team, realName) {
+            this.name = name;
+            this.team = team;
+            this.realName = realName;
+        }
     }
-})();
-(() => {
-    let a = 'let';
-    console.log(a);
-    const name = 'Ricardo';
-    const getName = () => {
-        console.log(name);
-    };
-    getName();
+    const antman = new Avenger('Antman', 'Capitan', 'Kris');
+    console.log(antman);
+    console.log(Avenger.averageAge);
 })();
 //# sourceMappingURL=main.js.map
