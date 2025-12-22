@@ -1,1 +1,1 @@
-{"version":3,"file":"main.d.ts","sourceRoot":"","sources":["../src/classes/basic.ts"],"names":[],"mappings":""}
+{"version":3,"file":"main.d.ts","sourceRoot":"","sources":["../src/classes/basic.ts","../src/classes/extends.ts"],"names":[],"mappings":""}
