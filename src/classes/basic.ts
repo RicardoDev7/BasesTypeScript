@@ -26,8 +26,8 @@
     }
 
     const antman: Avenger = new Avenger('Antman', 'Capitan', 'Scott Lang');
-    console.log(antman.realName);
-    console.log(Avenger.averageAge);
-    console.log(antman.bio());
-    console.log(Avenger.getAverageAge());
+    //console.log(antman.realName);
+    //console.log(Avenger.averageAge);
+    //console.log(antman.bio());
+    //console.log(Avenger.getAverageAge());
 })();
