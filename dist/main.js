@@ -49,4 +49,11 @@
     console.log(client);
     console.log(client.getFullAddress(1));
 })();
+(() => {
+    let addNumbersFunction;
+    addNumbersFunction = (number1, number2) => {
+        return number1 + number2;
+    };
+    console.log(addNumbersFunction(1, 2));
+})();
 //# sourceMappingURL=main.js.map
