@@ -44,5 +44,5 @@
     "skipLibCheck": true,
   },
   "exclude": ["node_modules", "dist"],
-  "include": ["src/classes"]
+  "include": ["src/interfaces"]
 }

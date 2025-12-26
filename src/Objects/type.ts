@@ -23,4 +23,5 @@
     }
     console.log(superman);
     console.log(superman.getName!());
+    
 })();
