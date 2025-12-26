@@ -1,59 +1,48 @@
 "use strict";
 (() => {
-    let flash = {
-        name: 'Barry Allen',
-        age: 24,
-        powers: [1, 2]
+    const conducirBatimovil = (auto) => {
+        auto.encender = true;
+        auto.velocidadMaxima = 100;
+        auto.acelear();
     };
-    console.log(flash);
-    let superman = {
-        name: 'Clark Kent',
-        powers: [1, 3],
-        getName() {
-            return this.name;
+    const batimovil = {
+        encender: false,
+        velocidadMaxima: 0,
+        acelear() {
+            console.log("...... gogogo!!!");
         }
     };
-    console.log(superman);
-    console.log(superman.getName());
-})();
-(() => {
-    class Mutant {
-        age;
+    const guason = {
+        reir: true,
+        comer: true,
+        llorar: false
+    };
+    const reir = (guason) => {
+        if (guason.reir) {
+            console.log("JAJAJAJA");
+        }
+    };
+    const ciudadGotica = (ciudadanos) => {
+        return ciudadanos.length;
+    };
+    class Persona {
         name;
-        realName;
-        constructor(age, name, realName) {
-            this.age = age;
+        age;
+        gender;
+        status;
+        constructor(name, age, gender, status) {
             this.name = name;
-            this.realName = realName;
             this.age = age;
+            this.gender = gender;
+            this.status = status;
             this.name = name;
-            this.realName = realName;
+            this.age = age;
+            this.gender = gender;
+            this.status = status;
         }
-        mutantPower(id) {
-            throw new Error("Method not implemented.");
+        printBio() {
+            console.log(`${this.name} - ${this.gender}`);
         }
     }
-})();
-(() => {
-    const client = {
-        name: 'Ricardo',
-        age: 31,
-        address: {
-            id: 123,
-            city: 'Lima'
-        },
-        getFullAddress(id) {
-            console.log(this.address?.city);
-        }
-    };
-    console.log(client);
-    console.log(client.getFullAddress(1));
-})();
-(() => {
-    let addNumbersFunction;
-    addNumbersFunction = (number1, number2) => {
-        return number1 + number2;
-    };
-    console.log(addNumbersFunction(1, 2));
 })();
 //# sourceMappingURL=main.js.map
