@@ -1,5 +1,36 @@
 "use strict";
 (() => {
+    class Mutante {
+        name;
+        realName;
+        constructor(name, realName) {
+            this.name = name;
+            this.realName = realName;
+        }
+    }
+    class Xmen extends Mutante {
+        salvarMundo() {
+            return 'Salvar el mundo';
+        }
+    }
+    class Villain extends Mutante {
+        conquistaMundo() {
+            return 'Conquista el mundo';
+        }
+    }
+    const wolverine = new Xmen('Wolverine', 'Logan');
+    const magneto = new Villain('Magneto', 'Maguns');
+    console.log(wolverine);
+    console.log(wolverine.salvarMundo());
+    console.log(magneto);
+    console.log(magneto.conquistaMundo());
+    const printName = (character) => {
+        console.log(character.realName);
+    };
+    printName(wolverine);
+    printName(magneto);
+})();
+(() => {
     class Avenger {
         name;
         team;
