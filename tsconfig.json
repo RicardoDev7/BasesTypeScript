@@ -44,5 +44,5 @@
     "skipLibCheck": true,
   },
   "exclude": ["node_modules", "dist"],
-  "include": ["src/Homeworks/app-homework4.ts"]
+  "include": ["src/namespaces"]
 }

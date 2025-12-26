@@ -1,48 +1,12 @@
 "use strict";
-(() => {
-    const conducirBatimovil = (auto) => {
-        auto.encender = true;
-        auto.velocidadMaxima = 100;
-        auto.acelear();
+var Validations;
+(function (Validations) {
+    Validations.validateText = (text) => {
+        return (text.length >= 3);
     };
-    const batimovil = {
-        encender: false,
-        velocidadMaxima: 0,
-        acelear() {
-            console.log("...... gogogo!!!");
-        }
+    const validateDate = (date) => {
+        return !isNaN(date.valueOf());
     };
-    const guason = {
-        reir: true,
-        comer: true,
-        llorar: false
-    };
-    const reir = (guason) => {
-        if (guason.reir) {
-            console.log("JAJAJAJA");
-        }
-    };
-    const ciudadGotica = (ciudadanos) => {
-        return ciudadanos.length;
-    };
-    class Persona {
-        name;
-        age;
-        gender;
-        status;
-        constructor(name, age, gender, status) {
-            this.name = name;
-            this.age = age;
-            this.gender = gender;
-            this.status = status;
-            this.name = name;
-            this.age = age;
-            this.gender = gender;
-            this.status = status;
-        }
-        printBio() {
-            console.log(`${this.name} - ${this.gender}`);
-        }
-    }
-})();
+})(Validations || (Validations = {}));
+console.log(Validations.validateText('RK7'));
 //# sourceMappingURL=main.js.map
