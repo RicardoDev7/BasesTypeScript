@@ -23,8 +23,12 @@
         address: {
             id: 123,
             city: 'Lima'
+        },
+        getFullAddress(id) {
+            console.log(this.address?.city);
         }
     };
     console.log(client);
+    console.log(client.getFullAddress(1));
 })();
 //# sourceMappingURL=main.js.map

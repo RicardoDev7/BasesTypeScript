@@ -2,7 +2,8 @@
     interface Client {
         name: string,
         age?: number,
-        address?: Address
+        address?: Address,
+        getFullAddress(id: number) : void
     }
 
     interface Address{
@@ -17,9 +18,13 @@
         address: {
             id: 123,
             city: 'Lima'
+        },
+        getFullAddress(id: number) : void {
+            console.log(this.address?.city);
         }
     }
 
     console.log(client);
+    console.log(client.getFullAddress(1));
 
 })();
