@@ -17,6 +17,24 @@
     console.log(superman.getName());
 })();
 (() => {
+    class Mutant {
+        age;
+        name;
+        realName;
+        constructor(age, name, realName) {
+            this.age = age;
+            this.name = name;
+            this.realName = realName;
+            this.age = age;
+            this.name = name;
+            this.realName = realName;
+        }
+        mutantPower(id) {
+            throw new Error("Method not implemented.");
+        }
+    }
+})();
+(() => {
     const client = {
         name: 'Ricardo',
         age: 31,
